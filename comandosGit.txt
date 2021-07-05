@@ -1,0 +1,11 @@
+***************PASOS PARA PARA HACER PULL Y PUSH POR COMANDOS***************************
+
+git add -A //agrega todo el contenido de la carpeta
+
+git commit -m "especificacion de lo que subes" 
+
+git pull
+
+git push
+
+
