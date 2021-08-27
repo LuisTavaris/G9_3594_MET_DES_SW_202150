@@ -79,7 +79,7 @@ public class FrmUsuario extends javax.swing.JFrame {
         jLabel5.setText("Fecha de nacimiento:");
 
         jLabel6.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
-        jLabel6.setText("Numero Celular:");
+        jLabel6.setText("Número Celular:");
 
         TextApellidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,18 +87,24 @@ public class FrmUsuario extends javax.swing.JFrame {
             }
         });
 
+        TextCedula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextCedulaActionPerformed(evt);
+            }
+        });
+
         jLabel7.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
-        jLabel7.setText("Direccion Domiciliaria: ");
+        jLabel7.setText("Dirección Domiciliaria: ");
 
         jLabel8.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
-        jLabel8.setText("Correo Electronico:");
+        jLabel8.setText("Correo Electrónico:");
 
         TextDireccion.setColumns(20);
         TextDireccion.setRows(5);
         jScrollPane1.setViewportView(TextDireccion);
 
         ButtonSalir.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
-        ButtonSalir.setText("Regresar");
+        ButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cerrar-sesion.png"))); // NOI18N
         ButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonSalirActionPerformed(evt);
@@ -106,7 +112,7 @@ public class FrmUsuario extends javax.swing.JFrame {
         });
 
         ButtonGuardar.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
-        ButtonGuardar.setText("Guardar");
+        ButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/boton-guardar-archivo.png"))); // NOI18N
         ButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonGuardarActionPerformed(evt);
@@ -120,8 +126,8 @@ public class FrmUsuario extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jSeparator1))
+                        .addGap(107, 107, 107)
+                        .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -152,30 +158,27 @@ public class FrmUsuario extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                        .addGap(0, 60, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(121, 121, 121)
-                        .addComponent(jSeparator2)
-                        .addGap(96, 96, 96)))
-                .addContainerGap())
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))))
+                .addGap(29, 45, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(ButtonSalir)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ButtonGuardar)
-                .addGap(19, 19, 19))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(130, 130, 130))
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(ButtonGuardar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ButtonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(92, 92, 92)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -186,9 +189,9 @@ public class FrmUsuario extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(TextApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel4)
-                    .addComponent(TextCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
@@ -210,11 +213,11 @@ public class FrmUsuario extends javax.swing.JFrame {
                         .addComponent(jLabel7)))
                 .addGap(24, 24, 24)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ButtonSalir)
-                    .addComponent(ButtonGuardar))
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ButtonSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ButtonGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -231,51 +234,74 @@ public class FrmUsuario extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TextApellidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextApellidosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextApellidosActionPerformed
-
-    private void ButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSalirActionPerformed
-       this.setVisible(false);
-       FrmMenuAdmin retro = new FrmMenuAdmin();
-       retro.setVisible(true);
-       
-     
-    }//GEN-LAST:event_ButtonSalirActionPerformed
-
     private void ButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonGuardarActionPerformed
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         UsuarioController userControl = new UsuarioController();
-         BasicDBObject basicObject;
-         
-            int selection = JOptionPane.showConfirmDialog(null, "Are you sure to save?", "User Saving", JOptionPane.YES_NO_CANCEL_OPTION);
-            
-            switch (selection){
-                case 0:
-                    usuario = new Usuario(TextNombres.getText(),TextApellidos.getText(),TextCedula.getText(),
-                                   format.format(dateOfBirth.getDate()),TextCelular.getText(),
-                                   TextDireccion.getText(),TextEmail.getText(),true);
-                    
-                   basicObject = userControl.register((Usuario) usuario);
-                dataBase.save(basicObject, "Usuarios");
-                   
-                JOptionPane.showMessageDialog(null, " information was saved ", TextNombres.getText() + " Saved ", JOptionPane.INFORMATION_MESSAGE);
-                this.setVisible(false);
+        ValidacionController cedula = new ValidacionController();
+        ValidacionController celular = new ValidacionController();
 
-                FrmRegistroUsuario frmRegister = new FrmRegistroUsuario();
+        BasicDBObject basicObject;
+
+        int selection = JOptionPane.showConfirmDialog(null, "¿Estás segura de guardar?", "Usuario Guardado", JOptionPane.YES_NO_CANCEL_OPTION);
+
+        switch (selection){
+            case 0:
+            usuario = new Usuario(TextNombres.getText(),TextApellidos.getText(),TextCedula.getText(),
+                format.format(dateOfBirth.getDate()),TextCelular.getText(),
+                TextDireccion.getText(),TextEmail.getText(),true);
+
+            if(TextNombres.getText().isEmpty()||TextApellidos.getText().isEmpty()||TextCedula.getText().isEmpty()
+                ||format.format(dateOfBirth.getDate()).isEmpty()|| TextCelular.getText().isEmpty()
+                ||  TextDireccion.getText().isEmpty() ||TextEmail.getText().isEmpty() ){
+                JOptionPane.showMessageDialog(null, " Campos no completados"," NO Registrado ", JOptionPane.ERROR_MESSAGE);
+                this.setVisible(false);
+                FrmUsuario frmRegister = new FrmUsuario();
                 frmRegister.setVisible(true);
-                break;
-                 case 1:
-                JOptionPane.showMessageDialog(null, " information was NOT saved ", TextNombres.getText() + " NOT saved ", JOptionPane.ERROR_MESSAGE);
-                //emptyFields();
-                break;
+            }else{
+                JOptionPane.showMessageDialog(null, " Campos  completos ", " Registrado ", JOptionPane.INFORMATION_MESSAGE);
+                if (cedula.Cedula(TextCedula.getText())==true || TextCedula.getText().equals("")){
+                    basicObject = userControl.register((Usuario) usuario);
+                    dataBase.save(basicObject, "Usuarios");
+                    JOptionPane.showMessageDialog(null, " la información fue guardada ", TextNombres.getText() + " Registrado ", JOptionPane.INFORMATION_MESSAGE);
+                    this.setVisible(false);
+                    FrmRegistroUsuario frmRegister = new FrmRegistroUsuario();
+                    frmRegister.setVisible(true);
+
+                }else if(cedula.Cedula(TextCedula.getText())==false){                  
+                        JOptionPane.showMessageDialog(null, " Cédula NO válida ", TextCedula.getText() + " NO Registrado ", JOptionPane.ERROR_MESSAGE);                 
+                    this.setVisible(false);
+                    FrmUsuario frmRegister = new FrmUsuario();
+                    frmRegister.setVisible(true);
+                };
+            };
+
+            break;
+            case 1:
+            JOptionPane.showMessageDialog(null, "  Informacion NO registrada ", TextNombres.getText() + " NO Registrado ", JOptionPane.ERROR_MESSAGE);
+            //emptyFields();
+            break;
             default:
-                JOptionPane.showMessageDialog(null, " Action was canceled ", TextNombres.getText() + " Cancelled ", JOptionPane.WARNING_MESSAGE);
-                break;
-                                                           
-            }
+            JOptionPane.showMessageDialog(null, " Se canceló la acción ", TextNombres.getText() + "Cancelada ", JOptionPane.WARNING_MESSAGE);
+            break;
+
+        }
     }//GEN-LAST:event_ButtonGuardarActionPerformed
 
+    private void ButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSalirActionPerformed
+        this.setVisible(false);
+        FrmMenuAdmin retro = new FrmMenuAdmin();
+        retro.setVisible(true);
+
+    }//GEN-LAST:event_ButtonSalirActionPerformed
+
+    private void TextCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextCedulaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextCedulaActionPerformed
+
+    private void TextApellidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextApellidosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextApellidosActionPerformed
+ 
     /**
      * @param args the command line arguments
      */
