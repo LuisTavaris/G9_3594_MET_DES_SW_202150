@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+<<<<<<< HEAD
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+<<<<<<<< HEAD:codigoFuente/simulatorSystem_V0.5/nbproject/private/private.xml
+            <file>file:/C:/Users/luist/OneDrive/Documentos/LUIS%20TAVARIS/ESPE/SEMESTRE_MAYO2021-SEPTIEMBRE2021/simulatorSystem/src/ec/edu/espe/simulatorSystem/view/FrmUsuario.java</file>
+            <file>file:/C:/Users/luist/OneDrive/Documentos/LUIS%20TAVARIS/ESPE/SEMESTRE_MAYO2021-SEPTIEMBRE2021/simulatorSystem/src/ec/edu/espe/simulatorSystem/view/FrmGestorProducto.java</file>
+========
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/controller/UsuarioController.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/controller/ProveedorController.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmProveedor.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmUserAdminLogin.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmMenuAdmin.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmProducto.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmMenuUser.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmUsuario.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/controller/AdministradorCotroller.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmRegistroUsuario.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/controller/LoginController.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/view/FrmLogin.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/controller/ProductoController.java</file>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0.4/src/ec/edu/espe/simulatorSystem/model/Administrador.java</file>
+>>>>>>>> 543c4fbe4a61192c3d82fa614806b52b277359b8:codigoFuente/simulatorSystem_V0.4/nbproject/private/private.xml
+=======
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/JAVIER/OneDrive/Documentos/Grupo9_3594/codigoFuente/simulatorSystem_V0_3/src/ec/edu/espe/simulatorSystem/view/FrmUsuario.java</file>
+>>>>>>> 543c4fbe4a61192c3d82fa614806b52b277359b8
+        </group>
+    </open-files>
+</project-private>
